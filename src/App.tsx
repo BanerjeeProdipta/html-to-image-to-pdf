@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import * as htmlToImage from 'html-to-image';
+import FileSaver from 'file-saver';
+
 
 function toPDF(_png: string) {
 
@@ -10,7 +12,7 @@ function toPDF(_png: string) {
 const handleDivToImage = () => {
     htmlToImage.toJpeg(document.getElementById('divToDownload') as HTMLElement, {quality: 0.95})
         .then(function (blob) {
-            window.saveAs(blob, 'Image.png');
+            FileSaver.saveAs(blob, 'Image.png');
             toPDF(blob);
         });
 
