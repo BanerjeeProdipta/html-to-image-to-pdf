@@ -10,7 +10,7 @@ function toPDF(_png: string) {
 }
 
 const handleDivToImage = () => {
-    htmlToImage.toJpeg(document.getElementById('divToDownload') as HTMLElement, {quality: 0.95})
+    htmlToImage.toPng(document.getElementById('divToDownload') as HTMLElement)
         .then(function (blob) {
             FileSaver.saveAs(blob, 'Image.png');
             toPDF(blob);
@@ -35,11 +35,38 @@ function App() {
                 >
                     Learn React
                 </a>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
+                <h1>PRODIPTA BANERJEE</h1>
             </header>
-            
-            <body>
 
-            </body>
             <footer>
                 <div>
                     <button onClick={handleDivToImage}>Download Image</button>
@@ -50,5 +77,6 @@ function App() {
 }
 
 export default App;
+
 
 
