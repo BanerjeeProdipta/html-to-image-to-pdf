@@ -10,7 +10,7 @@ function toPDF(_png: string) {
 }
 
 const handleDivToImage = () => {
-    htmlToImage.toPng(document.getElementById('divToDownload') as HTMLElement)
+    htmlToImage.toJpeg(document.getElementById('divToDownload') as HTMLElement, {width: 1768})
         .then(function (blob) {
             FileSaver.saveAs(blob, 'Image.png');
             toPDF(blob);
